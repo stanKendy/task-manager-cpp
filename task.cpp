@@ -21,7 +21,7 @@ bool Task::isDone() const {
 }
 std::string Task::toString() const {
     std::string mark = done ? "[X]":"[ ]";
-    std::string sentence = mark + title +" (Priority " + std::to_string(priority) + " )";
+    std::string sentence = mark +" " + title +" (Priority" + std::to_string(priority) + " )";
     return sentence;
 }
 void Task::markAsDone() {
